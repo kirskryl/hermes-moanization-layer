@@ -1,0 +1,22 @@
+# Значения применяются scripts/install.sh через `hermes config set`.
+# Telegram token, allowlist и home_channel задаются владельцем отдельно.
+model:
+  provider: openai-codex
+  default: gpt-6-luna
+agent:
+  max_turns: 30
+  reasoning_effort: medium
+display:
+  language: ru
+  busy_input_mode: queue
+  platforms:
+    telegram:
+      interim_assistant_messages: false
+      tool_progress: false
+      busy_ack_detail: false
+cron:
+  wrap_response: false
+stt:
+  enabled: true
+  provider: local_command
+  language: ru

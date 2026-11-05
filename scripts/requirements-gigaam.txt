@@ -1,0 +1,7 @@
+gigaam==0.2.0
+transformers==4.57.1
+numpy
+soundfile
+omegaconf
+sentencepiece
+huggingface_hub

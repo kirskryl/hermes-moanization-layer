@@ -1,0 +1,10 @@
+[Unit]
+Description=Reset Hermes Telegram model choices to Luna
+
+[Service]
+Type=oneshot
+User=__SERVICE_USER__
+Environment=HERMES_HOME=__HERMES_HOME__
+Environment=HERMES_AGENT_ROOT=__HERMES_AGENT_ROOT__
+Environment=MOANA_HOME=__MOANA_HOME__
+ExecStart=__MOANA_HOME__/bin/reset_luna.sh
