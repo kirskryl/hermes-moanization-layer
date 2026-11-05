@@ -79,11 +79,8 @@ if [[ "$answer" =~ ^[Yy]$ ]]; then
   fi
 fi
 
-read -r -p 'Download local GigaAM and Whisper models now? [y/N] ' answer
-if [[ "$answer" =~ ^[Yy]$ ]]; then
-  MOANA_HOME="$MOANA_HOME" "$ROOT/scripts/install_gigaam.sh"
-  MOANA_HOME="$MOANA_HOME" "$ROOT/scripts/install_whisper.sh"
-fi
+MOANA_HOME="$MOANA_HOME" "$ROOT/scripts/install_gigaam.sh"
+MOANA_HOME="$MOANA_HOME" "$ROOT/scripts/install_whisper.sh"
 
 read -r -p 'Install the 23:59 daily Luna reset timer now? [y/N] ' answer
 if [[ "$answer" =~ ^[Yy]$ ]]; then
