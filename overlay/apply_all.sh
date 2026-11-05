@@ -19,6 +19,7 @@ case "$MODE" in
   --check)
     run text-batch python3 "$ROOT/text_batch.py" --check
     run unified-inbox python3 "$ROOT/unified_inbox/apply.py" --check
+    run queue-ack python3 "$ROOT/queue_ack/apply.py" --check
     run models-alias python3 "$ROOT/models_alias/apply.py" --check
     run model-picker python3 "$ROOT/model_picker/apply.py" --check
     run soft-refusal python3 "$ROOT/soft_refusal_fallback/apply.py" --check
@@ -26,6 +27,7 @@ case "$MODE" in
   --apply|--check-or-apply)
     run text-batch python3 "$ROOT/text_batch.py" --apply
     run unified-inbox python3 "$ROOT/unified_inbox/apply.py" --apply
+    run queue-ack python3 "$ROOT/queue_ack/apply.py" --apply
     run models-alias python3 "$ROOT/models_alias/apply.py" --apply
     run model-picker python3 "$ROOT/model_picker/apply.py" --apply
     run soft-refusal python3 "$ROOT/soft_refusal_fallback/apply.py" --apply

@@ -12,6 +12,7 @@ agent:
 display:
   language: ru
   busy_input_mode: queue
+  busy_ack_enabled: false
   platforms:
     telegram:
       # Пропускает один ETA от агента; это не поток мыслей и не журнал инструментов.
