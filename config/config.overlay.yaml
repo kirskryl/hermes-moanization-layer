@@ -3,6 +3,9 @@
 model:
   provider: openai-codex
   default: gpt-6-luna
+image_gen:
+  provider: openai-codex
+  model: gpt-image-2-medium
 agent:
   max_turns: 30
   reasoning_effort: medium
