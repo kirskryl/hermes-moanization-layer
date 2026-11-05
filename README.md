@@ -27,7 +27,7 @@
 ## Накатка
 
 ```bash
-git clone https://github.com/OWNER/hermes-moanization-layer.git
+git clone https://github.com/kirskryl/hermes-moanization-layer.git
 cd hermes-moanization-layer
 ./scripts/install.sh
 ```
