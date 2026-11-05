@@ -14,7 +14,8 @@ display:
   busy_input_mode: queue
   platforms:
     telegram:
-      interim_assistant_messages: false
+      # Пропускает один ETA от агента; это не поток мыслей и не журнал инструментов.
+      interim_assistant_messages: true
       tool_progress: false
       busy_ack_detail: false
 cron:
